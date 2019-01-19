@@ -67,9 +67,6 @@ resources:
           WriteCapacityUnits: 1
         TableName: ${self:custom.tableName}
 
-plugins:
-  - serverless-python-requirements
-  - serverless-wsgi
 
 
 
