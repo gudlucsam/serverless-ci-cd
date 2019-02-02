@@ -24,3 +24,6 @@ functions:
     handler: wsgi.handler
     events:
       - http: 'GET /status'
+plugins:
+  - serverless-python-requirements
+  - serverless-wsgi

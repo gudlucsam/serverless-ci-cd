@@ -6,8 +6,8 @@ python:
 install:
   - pip install -r requirements.txt
   - npm install -g serverless
-  - sls plugin install -n serverless-wsgi
-  - sls plugin install -n serverless-python-requirements 
+  # - sls plugin install -n serverless-wsgi
+  # - sls plugin install -n serverless-python-requirements 
 script:
   - python -m pytest -v
 deploy:
