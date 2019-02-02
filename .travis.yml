@@ -6,14 +6,12 @@ python:
 install:
   - pip install -r requirements.txt
   - npm install -g serverless
-  - npm install --save serverless-wsgi 
-  - npm install --save serverless-python-requirements
   - sls plugin install -n serverless-wsgi
   - sls plugin install -n serverless-python-requirements 
 script:
   - python -m pytest -v
 deploy:
   provider: script
-  script: serverless deploy --stage dev
+  script: serverless deploy --stage staging
   on:
     branch: master
